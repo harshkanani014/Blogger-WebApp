@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Blog App</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"></link>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/app.css"></link>
+        <style>
+             body > .grid {
+                     height: 100%;
+             }
+                .image {
+                     margin-top: -100px;
+            }
+                .column {
+                    max-width: 450px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ui fixed inverted menu">
+            <!--A container can be used inside of a menu to make sure menu items appear inline with page -->
+            <div class="ui container">
+                <div class="header item"><i class="code icon"></i>Blog App</div>
+                <a href="/" class="item">Home</a>
+                <a href="/blogs/new" class="item">New Post</a>
+                <a href="/login" class="item">Login</a>
+             </div>
+            
+        </div>
+    <div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui image header">
+      <div class="content">
+        Sign-Up
+      </div>
+    </h2>
+    <form action="/signup" method="POST" class="ui large form">
+      <div class="ui stacked secondary  segment">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" name="username" placeholder="     username">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="email" name="email" placeholder="     E-mail">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="tel" name="number" placeholder="Enter as per format +(country code)">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" name="password" placeholder="     Password">
+          </div>
+        </div>
+        <button class="ui fluid large teal submit button">Verify</button>
+      </div>
+
+      <div class="ui error message"></div>
+
+    </form>
+
+  </div>
+</div>
+</body>
+</html>
